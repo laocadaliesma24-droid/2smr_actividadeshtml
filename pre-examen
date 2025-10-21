@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabla con Colspan y Rowspan</title>
+    <style>
+        /* Estilos básicos para que la tabla sea visible */
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: center;
+        }
+        .header-principal {
+            background-color: #a4c6e0;
+        }
+        .celda-fila {
+            background-color: #e0a4a4;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ejemplo de Tabla con Colspan y Rowspan</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="header-principal">Datos Generales (Colspan=3)</th>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2" class="celda-fila">Juan Pérez (Rowspan=2)</td>
+                <td>35</td>
+                <td>Madrid</td>
+            </tr>
+            <tr>
+                <td>42</td>
+                <td>Barcelona</td>
+            </tr>
+            <tr>
+                <td>María García</td>
+                <td>28</td>
+                <td>Sevilla</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" class="header-principal">Total de Registros: 3 (Colspan=3)</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
